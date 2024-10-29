@@ -1,0 +1,35 @@
+.titulo{
+    font-family:  "Quicksand", serif;
+    margin: 30;
+    padding: 0;
+    text-align: center;
+    background-color:  #d98880;
+}  
+
+button{
+    color:black;
+    background-color: #d98880;
+    border: 0;
+    font-family: "Quicksand", serif;
+    font-size: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px,0;
+
+
+}
+
+button{
+    color:black;
+    background-color: #d98880;
+    border: 0;
+    font-family: "Quicksand", serif;
+    font-size: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px,0;
+
+
+}
