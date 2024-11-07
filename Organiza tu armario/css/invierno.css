@@ -4,6 +4,18 @@
    
 }
 
-.click{
-   display: block;
+.mostrar{
+    display: inline-block;
+}
+
+button{
+    color:black;
+    background-color: #d8d8d4;
+    border: 0;
+    font-family: "Quicksand", serif;
+    font-size: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px,0;
 }

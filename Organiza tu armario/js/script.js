@@ -4,3 +4,5 @@ import {getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/
 
 const input = document.getElementById("añadir")
 const boto = document.getElementById("afegir")
+
+
