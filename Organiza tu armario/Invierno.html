@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     
+    
     <title>Invierno</title>
     
 </head>
@@ -15,7 +16,7 @@
 
 
 
- <button onclick="mostrar()"> Modelo 1</button>
+ <button>Modelo 1</button>
 
  
  <button onclick="mostrar2()"> Modelo 2</button>
@@ -24,22 +25,8 @@
 
 <button onclick="mostrar()"> Modelo 3</button>
 
+<div id="l1"></div>
 
 </body>
-<script>
-    function mostrar(){
-    let imatges = document.getElementsByClassName("img");
-    for(let i = 0; i< imatges.length; i++){
-       imatges[i].classList.add("mostrar")
-        console.log(imatges[i].classList)
-    }
-}
-function mostrar2(){
-    let imatges = document.getElementsByClassName("img");
-    for(let i = 0; i< imatges.length; i++){
-       imatges[i].classList.add("mostrar")
-        console.log(imatges[i].classList)
-    }
-}
-</script>
+<script type="module" src="./js/script.js"></script>
 </html>
