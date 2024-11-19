@@ -1,8 +1,4 @@
-.img{
-    width: 20%;
-    display: none;
-   
-}
+
 
 .mostrar{
     display: inline-block;
@@ -13,9 +9,28 @@ button{
     background-color: #d8d8d4;
     border: 0;
     font-family: "Quicksand", serif;
-    font-size: 50px;
+    font-size: 20px;
     border-radius: 10px;
-    text-align: center;
-    padding: 15px;
-    margin: 10px,0;
+    text-align:center;
+    padding: 5px;
+    margin: 5px,5;
+    width: 15%;
+  
+}
+
+h1{
+    font-size: 80%;
+}
+
+img{
+    width: 10%;
+   
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
 }

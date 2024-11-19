@@ -1,4 +1,34 @@
-.img{
-    width: 20%;
+
+
+.mostrar{
+    display: inline-block;
+}
+button{
+    color:black;
+    background-color: #d8d8d4;
+    border: 0;
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align:center;
+    padding: 5px;
+    margin: 5px, 5;
+    width: 15%;
+}
+
+
+
+h1{
+    font-size: 80%;
+}
+
+img{
+    width: 10%;
    
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;}
+

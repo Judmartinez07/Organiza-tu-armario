@@ -7,12 +7,27 @@ const appSettings = {
 }
 const app = initializeApp(appSettings);
 const baseDades = getDatabase(app);
-const l1 = ref(baseDades, "Look 1 ");
-const l2 = ref(baseDades, "Look 2");
-const l3 = ref(baseDades, "Look 3");
+const l4 = ref(baseDades, "Verano Look 1");
+const l5 = ref(baseDades, "Verano Look 2");
+const l6 = ref(baseDades, "Verano Look 3 ");
 
 
-onValue(l1, function(snapshot) {
+onValue(l4, function(snapshot) {
+  
+    if (snapshot.exists()){
+
+        let resultats = Object.entries(snapshot.val())
+
+        for (let i = 0; i < resultats.length; i++) {
+            let current = resultats[i]
+            
+            addElement(current, "l4")
+        } 
+    }
+})
+
+
+onValue(l5, function(snapshot) {
 
     if (snapshot.exists()){
 
@@ -20,14 +35,14 @@ onValue(l1, function(snapshot) {
 
         for (let i = 0; i < resultats.length; i++) {
             let current = resultats[i]
-   
-            addElement(current,"l1")
+         
+            addElement(current, "l5")
         } 
     }
 })
 
 
-onValue(l2, function(snapshot) {
+onValue(l6, function(snapshot) {
 
     if (snapshot.exists()){
 
@@ -35,25 +50,11 @@ onValue(l2, function(snapshot) {
 
         for (let i = 0; i < resultats.length; i++) {
             let current = resultats[i]
-
-            addElement(current,"l2")
+      
+            addElement(current, "l6")
         } 
     }
 })
-onValue(l3, function(snapshot) {
-
-    if (snapshot.exists()){
-
-        let resultats = Object.entries(snapshot.val())
-
-        for (let i = 0; i < resultats.length; i++) {
-            let current = resultats[i]
-
-            addElement(current,"l3")
-        } 
-    }
-})
-
 
 function addElement(e, look){
     let link = document.createElement("a");
@@ -78,7 +79,7 @@ function addElement(e, look){
 
 
 document.getElementById("mod1").addEventListener("click", function(){
-    let el = document.getElementsByClassName("l1");
+    let el = document.getElementsByClassName("l4");
     for(let i = 0; i<=el.length; i++){
         el[i].hidden = false;
     }
@@ -86,9 +87,8 @@ document.getElementById("mod1").addEventListener("click", function(){
 });
 
 
-
 document.getElementById("mod2").addEventListener("click", function(){
-    let el = document.getElementsByClassName("l2");
+    let el = document.getElementsByClassName("l5");
     for(let i = 0; i<=el.length; i++){
         el[i].hidden = false;
     }
@@ -96,12 +96,9 @@ document.getElementById("mod2").addEventListener("click", function(){
 });
 
 document.getElementById("mod3").addEventListener("click", function(){
-    let el = document.getElementsByClassName("l3");
+    let el = document.getElementsByClassName("l6");
     for(let i = 0; i<=el.length; i++){
         el[i].hidden = false;
     }
     
 });
-
-
-
