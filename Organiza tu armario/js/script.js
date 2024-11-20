@@ -80,17 +80,32 @@ function addElement(e, look){
 document.getElementById("mod1").addEventListener("click", function(){
     let el = document.getElementsByClassName("l1");
     for(let i = 0; i<=el.length; i++){
-        el[i].hidden = false;
+
+        if(el[i].hidden == true){
+            el[i].hidden = false;
+        }else{
+            el[i].hidden = true;
+        }
+        
+
     }
     
 });
 
 
 
+
 document.getElementById("mod2").addEventListener("click", function(){
     let el = document.getElementsByClassName("l2");
     for(let i = 0; i<=el.length; i++){
-        el[i].hidden = false;
+
+        if(el[i].hidden == true){
+            el[i].hidden = false;
+        }else{
+            el[i].hidden = true;
+        }
+        
+
     }
     
 });
@@ -98,7 +113,14 @@ document.getElementById("mod2").addEventListener("click", function(){
 document.getElementById("mod3").addEventListener("click", function(){
     let el = document.getElementsByClassName("l3");
     for(let i = 0; i<=el.length; i++){
-        el[i].hidden = false;
+
+        if(el[i].hidden == true){
+            el[i].hidden = false;
+        }else{
+            el[i].hidden = true;
+        }
+        
+
     }
     
 });
