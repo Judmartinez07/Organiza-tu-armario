@@ -8,15 +8,24 @@
 button{
     color:black;
     background-color: #d8d8d4;
-    border: 0;
+    border-radius: 20px !important;
     font-family: "Quicksand", serif;
     font-size: 20px;
-    border-radius: 10px;
     text-align:center;
-    padding: 5px;
-    margin: 5px,5;
-    width: 15%;
+    padding: 10px 20px;
+    margin: 5px, 5;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
   
+}
+.titolPetit{
+    font-size: 20px;
+    color: #e6b0aa ;
+ 
+ }
+button:hover{
+    transform: scale(1.1);
 }
 
 h1{
@@ -24,7 +33,7 @@ h1{
 }
 
 img{
-    width: 10%;
+    width: 40%;
    
 }
 

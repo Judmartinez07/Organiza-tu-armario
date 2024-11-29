@@ -62,11 +62,21 @@ function addElement(e, look){
     cont.classList += look
 
     let titol = document.createElement("h1");
+    titol.classList += "titolPetit"
     titol.textContent=e[0]
     let show = document.createElement("img");
     show.src = e[1].IMG 
-
-    let c = document.getElementById("lista");
+    let c;
+    if(look =="l1"){
+        c = document.getElementById("lista1");
+    }
+    if(look =="l2"){
+        c = document.getElementById("lista2");
+    }
+    if(look =="l3"){
+        c = document.getElementById("lista3");
+    }
+    
     cont.appendChild(titol);
     cont.appendChild(show);
     cont.hidden = true;

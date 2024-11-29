@@ -7,31 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Verano</title>
 </head>
 <body>
    
     <div class="container">
-        <img src="./img/Verano Look 1.png" >
-        <button id="mod1">Modelo 1</button>
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/Verano Look 1.png">
+                <button id="mod1">Modelo 1</button>
+                <div id="lista1"></div>
+            </div>
+            <div class="col-4">
+                <img src="./img/Verano Look 2.png">
+                <button id="mod2"> Modelo 2</button>
+                <div id="lista2"></div>
+            </div>
+            <div class="col-4">
+                <img src="./img/Verano Look 3.png">
+                <button id="mod3"> Modelo 3</button>
+                <div id="lista3"></div>
+            </div>
+        </div>
     </div>
-  
 
-
-<div class="container">
-    <img src="./img/Verano Look 2.png">
-    <button id="mod2"> Modelo 2</button>
-    
-</div>
-   
-
-   <div class="container">
-   <img src="./img/Verano Look 3.png">
-   <button id="mod3"> Modelo 3</button>
-
-   </div>
-   
-   <div id="lista"></div>
+    </div>
 
 </body>
 <script type="module" src="./js/scriptVerano.js"></script>

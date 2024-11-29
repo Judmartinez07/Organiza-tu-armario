@@ -4,21 +4,29 @@
     padding: 0;
     text-align: center;
     background-color:  #d98880;
+    
 }  
 
 button{
     color:black;
     background-color: #d98880;
-    border: 0;
+    border: none;
     font-family: "Quicksand", serif;
     font-size: 250px;
     border-radius: 10px;
     text-align: center;
     padding: 15px;
     margin: 10px,0;
+    cursor: pointer;
+ transition: transform 0.3s ease;
 
-
+ 
 }
+button:hover{
+    transform: scale(1.1);
+}
+
+
 
 button{
     color:black;
@@ -31,7 +39,7 @@ button{
     padding: 15px;
     margin: 10px,0;
 
-
 }
 
 
+   
